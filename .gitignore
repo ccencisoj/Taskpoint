@@ -1,3 +1,6 @@
+clave.txt
+
+
 **/node_modules
 **/*.env
 
@@ -11,3 +14,4 @@
 # misc
 .DS_Store
 *.pem
+
