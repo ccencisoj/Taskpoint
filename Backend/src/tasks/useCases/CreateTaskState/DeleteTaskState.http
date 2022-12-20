@@ -3,5 +3,5 @@ Content-Type: application/json
 
 {
   "image": "http://localhost:4000",
-  "value": "Terminadas"
+  "value": "Pendientes"
 }
