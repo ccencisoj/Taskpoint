@@ -9,9 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/poppins": "^4.5.10",
+    "@mui/material": "^5.11.0",
+    "axios": "^1.2.1",
+    "clsx": "^1.2.1",
     "next": "13.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-query": "^3.39.2",
+    "react-textarea-autosize": "^8.4.0",
+    "sass": "^1.57.1",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "eslint": "8.28.0",
