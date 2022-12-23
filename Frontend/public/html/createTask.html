@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> 
+        .titulo_input{
+            width: 30%;
+            justify-content: left;
+            background-color: #d5e7e1;
+            height: 30px;
+            text-align:center;
+            
+        }
+        .descripcion{
+            background-color: #d5e7e1;
+        
+        }
+        .form {
+            width: 50%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .form button {
+            padding: 0.5em 1em;
+            border:darkblue;
+            background: rgb(100, 200, 255);
+            cursor: pointer;
+        }
+        .centrado_h1{
+            text-align: center;
+        }
+
+    </style>
+    
+    <div>
+        
+        <form class="form" >
+            
+            <header> 
+                <h1 class="centrado_h1" >Crear Tarea</h1>
+            </header>
+            <label for="titulo"><h2>Titulo</h2></label>
+            <input type="text" class="titulo_input" id="titulo" name="titulo" placeholder="Escribe aqui el nombre de la tarea">
+            <br>
+            <label for="descripcion"><h2>Descripción</h2></label>
+            <textarea class="descripcion" cols="50" rows="10" id="descripcion" placeholder="Explica aqui en que consiste la tarea"></textarea>
+            <br>
+            <label for="estado"><h2>Estado</h2></label>
+            <select name="select">
+                <option value="pendiente">Pendiente</option>
+                <option value="select" selected>En proceso </option>
+            
+                <option value="terminado">Terminado</option>
+            </select>        
+             <br>   
+            <button type="submit" >Crear/Guardar</button>
+                
+
+        </form>
+    </div>
+    <script>
+        function formToJSON(form) {
+        const formData = new FormData(form);
+        
+        const object = {};
+        
+        for (let [key, value] of formData.entries()) {
+            object[key] = value;
+        }
+        return object
+        }
+ 
+        function manipularPeticion(event) {
+            const formulario=event.target;
+            const data=formToJSON (formulario);
+            console.log(data);
+
+        }
+        const form = document.getElementsByClassName("form")[0];
+        console.log(form);
+ 
+        form.addEventListener("submit", (event)=> {
+        event.preventDefault();
+        manipularPeticion(event);
+        })
+    </script>
+
+</body>
+</html>
