@@ -8,12 +8,11 @@ import '@fontsource/poppins/600.css';
 import '@fontsource/poppins/700.css';
 import '@fontsource/poppins/800.css';
 import '@fontsource/poppins/900.css';
-import 'react-loading-skeleton/dist/skeleton.css';
 
 import React from "react";
-import { SkeletonTheme } from "react-loading-skeleton";
+import { lightTheme } from "../themes/lightTheme";
+import { ThemeProvider } from "@mui/material/styles";
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { TaskProvider } from '../contexts/TaskContext';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -25,12 +24,10 @@ const queryClient = new QueryClient({
 
 export default function App({Component, pageProps}) {
   return (
-      <SkeletonTheme baseColor="#e5e5ee" highlightColor="#fff">
-        <TaskProvider>
-          <QueryClientProvider client={queryClient}>
-            <Component {...pageProps}/>
-          </QueryClientProvider>
-        </TaskProvider>
-      </SkeletonTheme>
+    <ThemeProvider theme={lightTheme}>
+      <QueryClientProvider client={queryClient}>
+        <Component {...pageProps}/>
+      </QueryClientProvider>
+    </ThemeProvider>
   )
 }
