@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  outline: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  user-select: none;
+  position: relative;
+  font-family: "Poppins";
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  object-fit: cover;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.portal {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  position: fixed;
+  visibility: hidden;
+}

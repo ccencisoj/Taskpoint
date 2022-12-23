@@ -1,0 +1,44 @@
+:root {
+  // Primary color
+  --primary-color: hsl(265, 75%, 60%);
+
+  --primary-color-dark-100: hsl(265, 75%, 60%);
+  --primary-color-dark-200: hsl(265, 80%, 55%);
+  --primary-color-dark-300: hsl(265, 85%, 50%);
+  --primary-color-dark-400: hsl(265, 90%, 45%);
+  --primary-color-dark-500: hsl(265, 95%, 40%);
+
+  --primary-color-light-100: hsl(265, 75%, 60%);
+  --primary-color-light-200: hsl(265, 70%, 65%);
+  --primary-color-light-300: hsl(265, 65%, 70%);
+  --primary-color-light-400: hsl(265, 60%, 75%);
+  --primary-color-light-500: hsl(265, 55%, 80%);
+
+  --primary-color-trans-100: hsla(265, 75%, 60%, 100%);
+  --primary-color-trans-200: hsla(265, 75%, 60%, 85%);
+  --primary-color-trans-300: hsla(265, 75%, 60%, 70%);
+  --primary-color-trans-400: hsla(265, 75%, 60%, 55%);
+  --primary-color-trans-500: hsla(265, 75%, 60%, 40%);
+  --primary-color-trans-600: hsla(265, 75%, 60%, 25%);
+  --primary-color-trans-700: hsla(265, 75%, 60%, 10%);
+
+  // Tertiary color
+  --tertiary-color: hsl(240, 5%, 90%);
+
+  --tertiary-color-dark-100: hsl(240, 5%, 90%);
+  --tertiary-color-dark-200: hsl(240, 10%, 85%);
+  --tertiary-color-dark-300: hsl(240, 15%, 80%);
+  --tertiary-color-dark-400: hsl(240, 20%, 75%);
+  --tertiary-color-dark-500: hsl(240, 25%, 70%);
+
+  --tertiary-color-light-100: hsl(240, 5%, 90%);
+  --tertiary-color-light-200: hsl(240, 0%, 95%);
+  
+  --tertiary-color-trans-100: hsla(240, 5%, 90%, 100%);
+  --tertiary-color-trans-200: hsla(240, 5%, 90%, 85%);
+  --tertiary-color-trans-300: hsla(240, 5%, 90%, 70%);
+  --tertiary-color-trans-400: hsla(240, 5%, 90%, 55%);
+  --tertiary-color-trans-500: hsla(240, 5%, 90%, 40%);
+  --tertiary-color-trans-600: hsla(240, 5%, 90%, 25%);
+  --tertiary-color-trans-700: hsla(240, 5%, 90%, 10%);
+}

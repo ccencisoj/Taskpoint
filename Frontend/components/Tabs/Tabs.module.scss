@@ -1,0 +1,51 @@
+.tabs {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  overflow-x: scroll;
+
+  .item {
+    height: 100%;
+    display: flex;
+    flex-shrink: 0;
+    cursor: pointer;
+    padding: 12px 12px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    
+    .label {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .bar {
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      background-color: var(--primary-color);
+    }
+
+    .highlight {
+      width: 100%;
+      z-index: -1;
+      height: 80%;
+      position: absolute;
+      border-radius: 5px;
+      background-color: #f5f5ff;
+    }
+  }
+
+  .selected {
+    .label {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.tabs::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
