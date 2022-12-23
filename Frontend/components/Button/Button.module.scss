@@ -1,0 +1,47 @@
+.button {
+  width: max-content;
+  height: 48px;
+  padding: 0px 24px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  box-shadow: 0px 4px 12px var(--primary-color-light-400);
+
+  .label {
+    color: #fff;
+    font-weight: 600;
+  }
+}
+
+.full_width {
+  width: 100%;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+
+.primary:hover {
+  background-color: var(--primary-color-dark-200);
+}
+
+.primary:active {
+  box-shadow: none;
+  background-color: var(--primary-color-dark-300);
+}
+
+.tertiary {
+  box-shadow: none;
+  background-color: var(--tertiary-color);
+
+  .label {
+    color: var(--primary-color);
+  }
+}
+
+.tertiary:hover {
+  background-color: var(--tertiary-color-dark-200);
+}
+
+.tertiary:active {
+  background-color: var(--tertiary-color-dark-300);
+}
